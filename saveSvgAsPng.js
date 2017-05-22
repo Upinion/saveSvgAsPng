@@ -221,7 +221,7 @@
 
         function updateFontStyle(font, fontInBase64) {
           var dataUrl = 'url("data:' + font.format + ';base64,' + fontInBase64 + '")';
-          css += font.text.replace(font.fontUrlRegexp, dataUrl) + '\n';
+          // css += font.text.replace(font.fontUrlRegexp, dataUrl) + '\n';
 
           // schedule next font download on next tick.
           setTimeout(function() {
